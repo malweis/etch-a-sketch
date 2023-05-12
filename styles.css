@@ -1,0 +1,29 @@
+.main {
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    width: 400px;
+    height: 400px;
+    margin: 0 auto;
+    box-sizing: border-box;
+    border: 1px solid black;
+}
+.square {
+    flex-basis: calc(100% / var(--grid-size) - 2px); /* Adjust the size of the squares */
+    height: calc(100% / var(--grid-size) - 2px);
+    border: 1px solid black;
+    transition: background-color 0.2s ease; /* Add transition for smooth color change */
+}
+
+.square.hovered {
+    background-color: red; /* Change the background color when hovered */
+}
