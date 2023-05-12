@@ -34,7 +34,7 @@
                     container.appendChild(square);
                 }
 
-                container.addEventListener('mouseover', handleSquareHover);
+                
             } else {
                 alert("Invalid input. Please enter a number between 1 and 100.");
             }
